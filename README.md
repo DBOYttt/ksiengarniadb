@@ -12,3 +12,12 @@ tabela autorzy prechowywująca informacje o `autorach`, takie jak imie i nazwisk
 Baza danych księgarni została zaprojektowana z myślą o łatwym i intuicyjnym zarządzaniu produktami i klientami. Interfejs użytkownika umożliwia dodawanie nowych produktów, edytowanie istniejących produktów, przeglądanie listy produktów oraz zarządzanie klientami. Dodatkowo, interfejs umożliwia generowanie raportów sprzedażowych na podstawie danych przechowywanych w bazie danych.
 
 ![diagram](https://github.com/DBOYttt/ksiengarniadb/blob/main/diagram.png)
+
+# instalacja 
+zainstaluj najnowszą wersje oprogramowania `xampp`
+następnie pobierz repozytorium 
+uruchom program `xampp` 
+urochom `mysql`
+uruchom `phpmyadmin` 
+inportuj pliki z końcówką `.sql`
+gotowe :- )
