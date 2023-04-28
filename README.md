@@ -21,3 +21,19 @@ urochom `mysql`
 uruchom `phpmyadmin` 
 inportuj pliki z końcówką `.sql`
 gotowe :- )
+
+#przydatna wiedza 
+
+w projekcie do masowego generowania 4 różnych od siebie zmiennych użyłem generatora Mackaroo a następnie w varchar(50) zapisałem numery od 1 do 100 co pozwoliło mi na użycie
+```
+UPDATE zamowienia
+SET status_zamowienia =
+    CASE
+        WHEN status_zamowienia BETWEEN 1 AND 25 THEN 'Nowe'
+        WHEN status_zamowienia BETWEEN 26 AND 50 THEN 'W trakcie realizacji'
+        WHEN status_zamowienia BETWEEN 51 AND 75 THEN 'Zakończone'
+        WHEN status_zamowienia BETWEEN 76 AND 100 THEN 'Anulowane'
+    END;
+
+```
+dzięki czemu mogłem losowo zapisać masowo informacje 
